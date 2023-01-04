@@ -41,5 +41,9 @@
     grid-template-columns: 1fr;
 
     }
+    .page__description {
+        font-weight: 500;
+        font-size: 1.5rem;
+    }
 }
 

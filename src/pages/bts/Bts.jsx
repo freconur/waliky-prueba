@@ -32,7 +32,6 @@ const [height, width] = useWindowsSize()
           <img className="page__header-image" src={IMAGES_LINK.HEADER__BTS} alt="" />
         }
       </section>
-      {/* <h1 className="page__title">pagina de bts</h1> */}
       <p className="page__description">
         porque sabemos que eres fan de BTS hemos decidido abrir una tienda
         especial para todos los army
