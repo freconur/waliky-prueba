@@ -20,3 +20,8 @@
     /* text-transform: capitalize; */
     color: var(--colorText1);
 }
+@media (max-width: 420px) {
+    .contacto_text {
+        font-size: 1.5rem;
+    }
+}

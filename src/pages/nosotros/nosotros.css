@@ -5,6 +5,7 @@
     width: 100%;
 }
 .nosotros_container {
+    margin: 0px 15px;
     max-width: 1300px;
 
 }
@@ -19,4 +20,9 @@
     font-weight: 500;
     /* text-transform: capitalize; */
     color: var(--colorText1);
+}
+@media (max-width: 420px) {
+    .nosotros_text {
+        font-size: 1.5rem;
+    }
 }
