@@ -9,15 +9,12 @@
     right: 0px;
     bottom: 0px;
     left: 0px;
-    /* border-radius: 10px; */
-    /* width: 180px; */
     background-color: var(--secondaryColor);
     color: var(--black);
     z-index: 90;
     text-align: left;
     overflow: hidden;
     margin: initial;
-    /* min-height: 250px; */
   }
   .navbar__list li {
     font-size: 1.1rem;
@@ -33,10 +30,6 @@
   .navbar__list li:hover {
     background-color: var(--primaryColor);
   }
-  /* .navbar__list__border {
-    border-bottom: .5px solid var(--white);
-
-  } */
 
 }
 @media (max-width: 420px) {

@@ -28,7 +28,7 @@ const Navbar = () => {
   },[width])
   console.log('width', width)
   return (
-    <div className="navbar">
+    <div className="navbar_waliky">
       <div className="navbar_container">
           <Link className="logo__link" to="/">
             <img className="logo" src={IMAGES_LINK.LOGO} alt="logo" />

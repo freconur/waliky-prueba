@@ -12,7 +12,7 @@ import { TazasBtsPage } from './pages/bts/TazasBtsPage/TazasBtsPage';
 import { CojinesMidBtsPage } from './pages/bts/CojinesMidBtsPage/CojinesMidBtsPage';
 import { PosterBtsPage } from './pages/bts/posterBtsPage/PosterBtsPage';
 import { MediasBtsPage } from './pages/bts/mediasBtsPage/MediasBtsPage';
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function App() {
