@@ -1,0 +1,37 @@
+.menu-burger {
+  display: none;
+  width: 100%;
+  cursor: pointer;
+}
+.menu-burger__icon {
+  width: 30px;
+  height: 30px;
+
+  /* width: 100%; */
+}
+
+@media (max-width: 720px) {
+  .menu-burger {
+    display: grid;
+    grid-area: list;
+    place-items: flex-end;
+    margin: auto;
+    color: white;
+  }
+}
+@media (max-width: 420px) {
+  .menu-burger {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    place-content: center;
+    grid-area: none;
+    color: black;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 3px 4px 5px rgb(0 0 0 / 50%);
+    bottom: 20px;
+    right: 20px;
+    z-index: 50;
+  }
+}

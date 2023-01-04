@@ -1,0 +1,9 @@
+@import '../../Variables.css';
+.location {
+    display: grid;
+    /* place-content: center; */
+    font-weight: 500;
+    grid-area: location;
+    width: 245px;
+}
+

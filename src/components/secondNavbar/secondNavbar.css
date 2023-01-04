@@ -1,0 +1,33 @@
+.second-navbar {
+    /* justify-content: space-between; */
+    width: 100%;
+    display: grid;
+    /* place-content: center; */
+    /* background-color: #ff477d; */
+    background-color: black;
+    color: white;
+    height: 25px;
+    place-content: center;
+}
+.second-navbar__container {
+    display: grid;
+    grid-template-areas: "location space social";
+    grid-template-columns: 1fr 5fr 1fr;
+    max-width: 1300px;
+}
+@media ( max-width: 1052px) {
+    .second-navbar__container  {
+    grid-template-columns: 1fr 2fr 1fr;
+
+    }
+}
+@media ( max-width: 845px) {
+    .second-navbar {
+    place-content: initial;
+
+    }
+    .second-navbar__container  {
+    grid-template-columns: 1fr 1fr 1fr;
+
+    }
+}

@@ -1,0 +1,17 @@
+@import '../../Variables.css';
+
+.item__link {
+    text-decoration: none;
+}
+.item__list {
+    width: 100%;
+}
+.item__image {
+    width: 100%;
+}
+.item__name {
+    text-transform: capitalize;
+    margin: initial;
+    text-align: center;
+    color: var(--colorText1);
+}

@@ -1,0 +1,40 @@
+@import '../../Variables.css';
+.page__section-categories {
+    text-align: center;
+    margin: 5px 10px;
+}
+    
+.page__categories__title {
+    text-transform: capitalize;
+    color: var(--colorText1);
+} 
+.page__header {
+    width: 100%;
+}
+.page__header-image {
+    width: 100%;
+}
+.page__description {
+    text-align: center;
+}
+.page__categories-list__container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 300px));
+    gap: 20px;
+    padding: initial;
+    list-style: none;
+    place-content: center;
+}
+@media (max-width: 950px) { 
+    .page__categories-list__container {
+    grid-template-columns: repeat(2, minmax(100px, 300px));
+
+    }
+}
+@media (max-width: 420px) { 
+    .page__categories-list__container {
+    grid-template-columns: 1fr;
+
+    }
+}
+

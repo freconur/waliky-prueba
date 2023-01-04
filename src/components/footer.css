@@ -1,0 +1,42 @@
+@import "../Variables.css";
+
+.footer {
+  width: 100%;
+  display: flex;
+  background-color: var(--secondaryColor);
+  justify-content: center;
+  height: 60px;
+  align-items: center;
+}
+.footer__container {
+  font-size: 1.5rem;
+  margin: 0 10px;
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-areas: "social space brand";
+  color: var(--colorText3);
+  height: 100%;
+  place-content: center;
+}
+.footer__brand {
+  font-size: 1.5rem;
+  display: grid;
+  grid-area: brand;
+  margin: auto;
+  text-transform: uppercase;
+  width: 200px;
+}
+
+@media (max-width: 630px) {
+  .footer {
+    place-content: center;
+    height: 100px;
+  }
+  .footer__container {
+    grid-template-areas:
+      "social"
+      "brand";
+    grid-template-rows: 30px 30px;
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,14 @@
+.social {
+    display: grid;
+    place-content: center;
+    grid-area: social;
+}
+.social__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: initial;
+    gap:50px;
+    margin: initial;
+}
