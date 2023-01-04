@@ -33,7 +33,7 @@ const Navbar = () => {
           <Link className="logo__link" to="/">
             <img className="logo" src={IMAGES_LINK.LOGO} alt="logo" />
           </Link>
-        {menuActive && <NavbarList />}
+        {menuActive && <NavbarList menuActive={menuActive} setMenuActive={setMenuActive}/>}
         <MenuBurger  menuActive={menuActive} setMenuActive={setMenuActive}/>
       </div>
       <ButtonWhatsapp />

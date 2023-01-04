@@ -219,4 +219,11 @@
         grid-template-columns: 1fr;
       }
 }
+@media (max-width: 1024px) { 
+  
+    .sidebar-sticky__category__container {
+      height: 60px;
+      border-bottom: 1px solid var(--colorText);
+    }
+}
 

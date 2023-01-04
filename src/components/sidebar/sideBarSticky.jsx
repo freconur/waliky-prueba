@@ -16,35 +16,35 @@ const SideBarSticky = ({ title }) => {
   return (
     <div className="sidebar-sticky">
       <div className="sidebar-sticky__container">
-        {/* <div className="sidebar-sticky__title-container">
-          <h4 className="sidebar-sticky__title-page">Bts</h4>
-          <h2 className="sidebar-sticky__title">{title}</h2>
-        </div> */}
         <div className="sidebar-sticky__category">
-          <div onClick={() => setOpenCategoryList(!openCategoryList)} className="sidebar-sticky__category__container">
-            <h3
-              
-              className="sidebar-sticky__title-category"
-            >
-              categorias
-            </h3>
+          <div
+            onClick={() => setOpenCategoryList(!openCategoryList)}
+            className="sidebar-sticky__category__container"
+          >
+            <h3 className="sidebar-sticky__title-category">categorias</h3>
             <FontAwesomeIcon icon={filtro} />
           </div>
 
           {openCategoryList && (
-              <ul className="sidebar-sticky__list-container">
-                <span onClick={() => setOpenCategoryList(!openCategoryList)} className="button-close">X</span>
-                {categories.map((item) => {
-                  return (
-                    <Link
-                      className="sidebar-sticky__link"
-                      to={`/bts/${item.name}`}
-                    >
-                      <li key={item.id}>{item.name}</li>
-                    </Link>
-                  );
-                })}
-              </ul>
+            <ul className="sidebar-sticky__list-container">
+              <span
+                onClick={() => setOpenCategoryList(!openCategoryList)}
+                className="button-close"
+              >
+                X
+              </span>
+              {categories.map((item) => {
+                return (
+                  <Link
+                    onClick={() => setOpenCategoryList(!openCategoryList)}
+                    className="sidebar-sticky__link"
+                    to={`/bts/${item.name}`}
+                  >
+                    <li key={item.id}>{item.name}</li>
+                  </Link>
+                );
+              })}
+            </ul>
           )}
         </div>
       </div>
