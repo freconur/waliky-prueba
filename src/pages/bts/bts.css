@@ -16,6 +16,11 @@
 }
 .page__description {
     text-align: center;
+    font-size: 1.9rem;
+    margin: 40px;
+    color: var(--colorText1);
+    font-weight: 600;
+    text-transform: capitalize;
 }
 .page__categories-list__container {
     display: grid;

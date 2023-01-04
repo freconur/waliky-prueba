@@ -11,8 +11,6 @@
   grid-template-columns: minmax(100px,150px) minmax(100px, 900px) minmax(100px,250px);
   max-width: 1300px;
   margin: auto 10px;
-  /* place-content: center; */
-  /* width: 1200px; */
 }
 .logo__link {
   width: 150px;
