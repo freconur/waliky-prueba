@@ -1,5 +1,9 @@
 @import '../../Variables.css';
 
+.navbar_list_link {
+  text-decoration: none;
+  color: var(--white);
+}
 @media (max-width: 720px) {
   .navbar__list {
     display: grid;
@@ -26,7 +30,9 @@
     display: grid;
     place-content: center;
     padding: initial;
+
   }
+ 
   .navbar__list li:hover {
     background-color: var(--primaryColor);
   }

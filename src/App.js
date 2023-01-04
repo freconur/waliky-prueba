@@ -12,6 +12,8 @@ import { TazasBtsPage } from './pages/bts/TazasBtsPage/TazasBtsPage';
 import { CojinesMidBtsPage } from './pages/bts/CojinesMidBtsPage/CojinesMidBtsPage';
 import { PosterBtsPage } from './pages/bts/posterBtsPage/PosterBtsPage';
 import { MediasBtsPage } from './pages/bts/mediasBtsPage/MediasBtsPage';
+import { Contacto } from './pages/contacto/Contacto';
+import { Nosotros } from './pages/nosotros/Nosotros';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -31,6 +33,8 @@ function App() {
         <Route  exact path="/bts/poster" element={<PosterBtsPage />} />
         <Route  exact path="/bts/medias" element={<MediasBtsPage />} />
         <Route  exact path="/bts/cojinesMid" element={<CojinesMidBtsPage />} />
+        <Route  exact path="/contacto" element={<Contacto />} />
+        <Route  exact path="/nosotros" element={<Nosotros />} />
       </Routes>
      </Layout>
     </BrowserRouter>
