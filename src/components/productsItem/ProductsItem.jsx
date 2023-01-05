@@ -8,7 +8,22 @@ const ProductsItem = ({ items }) => {
           <li className="products-item__container" key={item.id}>
             <div className="products-item__info">
               <div className="product-item__image__container">
-                <img className="product-item__image" src={item.image} alt="" />
+                {
+                  // typeof item.image ===
+                  Array.isArray(item.image) ? (
+                    <img
+                      className="product-item__image"
+                      src={item.image[0]}
+                      alt=""
+                    />
+                  ) : (
+                    <img
+                      className="product-item__image"
+                      src={item.image}
+                      alt=""
+                    />
+                  )
+                }
               </div>
               <div className="products-item__info-text">
                 <p>{item?.marca}</p>

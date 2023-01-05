@@ -1,28 +1,31 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { IMAGES_LINK } from "../../../imagesLink/images.link";
-import '../sections.css'
+import "../sections.css";
 
 const KawaiSection = () => {
   return (
     <section className="section">
-      <h2 className="section__title">SECTION KAWAII</h2>
+      <h2 className="section__title">productos Kawaii</h2>
       <div className="section__container">
-        <img className="section__image" src={IMAGES_LINK.SUBLIMADOS_PERSONALIZADOS} alt="" />
+        <img
+          className="section__image"
+          src={IMAGES_LINK.SUBLIMADOS_PERSONALIZADOS}
+          alt=""
+        />
         <div className="container__text">
           <p className="text__description">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum
-            corporis ullam numquam nesciunt, aut alias neque ipsum rem nemo
-            iste, voluptatem perspiciatis tenetur, temporibus velit maiores.
-            Ipsa fuga velit mollitia.
+            Hemos creado un espacio con productos kawaii, si eres de los que le
+            gusta las cosas curiosas lindas y bonitas en colores y animales, entonces te encantara lo que veras aqui, echale un vistazo, de
+            seguro que encontraras algo que llame tu atencion.
           </p>
-          <Link className="description__link">
+          <Link to="/kawaii" className="description__link">
             <div className="link">ver productos</div>
           </Link>
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export {KawaiSection}
+export { KawaiSection };

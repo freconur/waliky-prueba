@@ -15,7 +15,7 @@ const Home = () => {
       {/* <SublimadosSection /> */}
       <BtsSection />
       {/* <PartySection /> */}
-      {/* <KawaiSection/> */}
+      <KawaiSection/>
       <WalikyStoreMaps />
     </div>
   );

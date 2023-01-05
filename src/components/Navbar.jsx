@@ -26,7 +26,6 @@ const Navbar = () => {
       setMenuActive(false)
     }
   },[width])
-  console.log('width', width)
   return (
     <div className="navbar_waliky">
       <div className="navbar_container">
