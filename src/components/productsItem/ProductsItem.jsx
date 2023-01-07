@@ -9,7 +9,6 @@ const ProductsItem = ({ items }) => {
             <div className="products-item__info">
               <div className="product-item__image__container">
                 {
-                  // typeof item.image ===
                   Array.isArray(item.image) ? (
                     <img
                       className="product-item__image"

@@ -28,20 +28,35 @@ function IndividualIntervalsExample() {
   }, [width]);
 
   return (
-    <Carousel>
-      {/* <Carousel.Item interval={5000}> */}
-      {width < 840 ? (
-        <Carousel.Item interval={5000}>
-          <Link to="/bts">
-            <img
-              className="d-block w-100 slider-responsive"
-              src={HEADER_IMAGE.HEADER_PROMOTION_COLLAGE_MOVIL}
-              alt="First slide"
-            />
-          </Link>
-        </Carousel.Item>
-      ) : (
-        width >= 840 && (
+    <>
+      {width < 840 && (
+        <Carousel>
+          {/* <Carousel.Item interval={5000}> */}
+
+          <Carousel.Item interval={5000}>
+            <Link to="/bts">
+              <img
+                className="d-block w-100 slider-responsive"
+                src={HEADER_IMAGE.HEADER_PROMOTION_COLLAGE_MOVIL}
+                alt="First slide"
+              />
+            </Link>
+          </Carousel.Item>
+
+          <Carousel.Item interval={5000}>
+            <Link to="/bts">
+              <img
+                className="d-block w-100 slider-responsive"
+                src={HEADER_IMAGE.HEADER_BIOMBOS_MOVIL}
+                alt="First slide"
+              />
+            </Link>
+          </Carousel.Item>
+        </Carousel>
+      )}
+
+      {width >= 840 && (
+        <Carousel>
           <Carousel.Item interval={5000}>
             <Link to="/bts">
               <img
@@ -51,30 +66,18 @@ function IndividualIntervalsExample() {
               />
             </Link>
           </Carousel.Item>
-        )
+          <Carousel.Item interval={5000}>
+            <Link to="/bts">
+              <img
+                className="d-block w-100 h-450 slider-responsive"
+                src={HEADER_IMAGE.HEADER_BIOMBOS_WEB}
+                alt="First slide"
+              />
+            </Link>
+          </Carousel.Item>
+        </Carousel>
       )}
-      {/* <Carousel.Item interval={5000}>
-          <img
-            className="d-block w-100 slider-responsive"
-            src={HEADER_IMAGE.HEADER_PRUEBASS_3}
-            alt="Second slide"
-          />
-      </Carousel.Item>
-      <Carousel.Item interval={5000}>
-          <img
-            className="d-block w-100 slider-responsive"
-            src={HEADER_IMAGE.HEADER_PRUEBASS_4}
-            alt="third slide"
-          />
-      </Carousel.Item>
-      <Carousel.Item interval={5000}>
-          <img
-            className="d-block w-100 slider-responsive"
-            src={HEADER_IMAGE.HEADER_PRUEBASS_5}
-            alt="fourth slide"
-          />
-      </Carousel.Item> */}
-    </Carousel>
+    </>
   );
 }
 
