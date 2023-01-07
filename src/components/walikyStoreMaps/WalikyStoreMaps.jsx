@@ -5,7 +5,7 @@ const WalikyStoreMaps = () => {
   return (
     <section className="section-maps">
       <div className="section-maps__container">
-        <h2 className="section-maps__title">ubicacion</h2>
+        <h2 className="section-maps__title">ubicanos</h2>
         <div className="section-maps__grid">
           <div className="section-maps__text__container">
             <p className="section-maps__text">
