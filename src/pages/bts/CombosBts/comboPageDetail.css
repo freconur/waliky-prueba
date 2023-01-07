@@ -1,0 +1,76 @@
+@import "../../../Variables.css";
+.combo-bts-detail {
+  width: 100%;
+  display: grid;
+  place-content: center;
+}
+.combo-bts-detail__container {
+  margin: 40px;
+  padding: 30px;
+  background: var(--white);
+  max-width: 1300px;
+  display: grid;
+  grid-template-columns: minmax(100px, 500px) minmax(100px, 400px);
+  gap: 40px;
+}
+.combo-bts__info-products {
+  display: grid;
+  place-content: center;
+}
+.combo-bts__info-products__container {
+  color: var(--colorText1);
+}
+.combo-bts__marca-container {
+  display: flex;
+  justify-content: space-between;
+}
+.combo-bts__id {
+  color: var(--colorText6);
+}
+.combo-bts__marca {
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+.combo-bts-title {
+  text-transform: capitalize;
+  font-size: 1.7rem;
+  font-weight: 600;
+  margin-top: 30px;
+}
+.combo-bts-description {
+  font-size: 1rem;
+}
+.combo-bts-list__title {
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+.combo-bts__precio-anterior {
+  text-decoration-line: line-through;
+}
+.combo-bts__price-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  text-transform: capitalize;
+  font-size: 0.9rem;
+}
+.combo-bts__price-container--negrita {
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+.combo-bts__image {
+  width: 100%;
+}
+
+@media (max-width: 990px) {
+  .combo-bts-detail__container {
+    /* grid-template-columns: minmax(100px, 500px) minmax(100px, 400px); */
+    grid-template-columns: 1fr;
+    margin: initial;
+  }
+  .combo-bts__marca-container {
+    display: block;
+    /* justify-content: space-between; */
+  }
+}

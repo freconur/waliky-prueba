@@ -15,6 +15,8 @@ import { MediasBtsPage } from './pages/bts/mediasBtsPage/MediasBtsPage';
 import { Contacto } from './pages/contacto/Contacto';
 import { Nosotros } from './pages/nosotros/Nosotros';
 import { KawaiiPage } from './pages/kawaii/KawaiiPage';
+import { CombosBts } from './pages/bts/CombosBts/CombosBts';
+import ComboPageDetails from './pages/bts/CombosBts/ComboPageDetails/ComboPageDetails';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -34,6 +36,8 @@ function App() {
         <Route  exact path="/bts/poster" element={<PosterBtsPage />} />
         <Route  exact path="/bts/medias" element={<MediasBtsPage />} />
         <Route  exact path="/bts/cojinesMid" element={<CojinesMidBtsPage />} />
+        <Route  exact path="/bts/combos-bts" element={<CombosBts />} />
+        <Route  exact path="/bts/combos-bts/:comboName" element={<ComboPageDetails />} />
         <Route  exact path="/contacto" element={<Contacto />} />
         <Route  exact path="/nosotros" element={<Nosotros />} />
         <Route  exact path="/kawaii" element={<KawaiiPage />} />

@@ -1,0 +1,25 @@
+.combo-bts {
+  width: 100%;
+}
+.combo-bts__container {
+  margin: auto;
+  max-width: 1300px;
+}
+.combo-bts__title {
+  text-align: center;
+  text-transform: capitalize;
+}
+.combo-bts__section {
+  display: grid;
+  place-content: center;
+}
+.section-title {
+  text-align: center;
+  text-transform: capitalize;
+}
+.section-info__container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(100px, 300px));
+  padding: initial;
+  list-style: none;
+}

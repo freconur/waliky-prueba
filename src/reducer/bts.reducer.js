@@ -12,6 +12,8 @@ export const initialStateBts = {
     libretas: [],
     poster: [],
     medias: [],
+    combosBts: [],
+    comboBtsfilter:[]
 }
 
 export const btsReducer = (state = initialStateBts, action) => {
@@ -68,6 +70,18 @@ export const btsReducer = (state = initialStateBts, action) => {
         return {
             ...state,
             medias: action.payload
+        }
+    }
+    case TYPES_BTS.GET_BTS_COMBOS: {
+        return {
+            ...state,
+            combosBts: action.payload
+        }
+    }
+    case TYPES_BTS.GET_BTS_COMBOS_FILTER: {
+        return {
+            ...state,
+            comboBtsfilter: action.payload
         }
     }
     default:

@@ -34,7 +34,7 @@ function IndividualIntervalsExample() {
           {/* <Carousel.Item interval={5000}> */}
 
           <Carousel.Item interval={5000}>
-            <Link to="/bts">
+            <Link to="/bts/combos-bts">
               <img
                 className="d-block w-100 slider-responsive"
                 src={HEADER_IMAGE.HEADER_PROMOTION_COLLAGE_MOVIL}
@@ -58,7 +58,7 @@ function IndividualIntervalsExample() {
       {width >= 840 && (
         <Carousel>
           <Carousel.Item interval={5000}>
-            <Link to="/bts">
+            <Link to="/bts/combos-bts">
               <img
                 className="d-block w-100 h-450 slider-responsive"
                 src={HEADER_IMAGE.HEADER_PROMOTION_COLLAGE_WEB}

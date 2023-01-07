@@ -19,11 +19,14 @@ code {
 body {
   margin: 0;
   padding: 0;
-  background: #f4f4ff;
+  background: #fbfbfb;
   color: #1E1E1F;
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
 }
+#bodies {
+  background: #fbfbfb;
 
+}
 /* #root { */
   /* display: grid; */
   /* min-height: 100vh; */
