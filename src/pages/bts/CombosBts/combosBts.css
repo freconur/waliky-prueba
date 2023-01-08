@@ -1,17 +1,22 @@
+@import '../../../Variables.css';
 .combo-bts {
   width: 100%;
+  margin: 50px 0;
 }
 .combo-bts__container {
-  margin: auto;
   max-width: 1300px;
 }
 .combo-bts__title {
   text-align: center;
-  text-transform: capitalize;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: var(--backgroundColor2);
+  margin: 20px 0;
 }
 .combo-bts__section {
   display: grid;
   place-content: center;
+  margin-top: 40px;
 }
 .section-title {
   text-align: center;
@@ -19,7 +24,31 @@
 }
 .section-info__container {
   display: grid;
-  grid-template-columns: repeat(3, minmax(100px, 300px));
+  /* grid-template-columns: repeat(3, minmax(100px, 300px)); */
+  grid-template-columns: repeat(2, minmax(100px, 300px));
   padding: initial;
   list-style: none;
+  gap: 40px;
 }
+.combo__image {
+  width: 100%;
+}
+.combo__link {
+  text-decoration: none;
+  color: var(--colorText6);
+}
+.combo__title {
+  text-transform: capitalize;
+  text-align: center;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+@media (max-width: 420px) {
+  .section-info__container {
+  grid-template-columns: minmax(100px, 300px);
+    
+  }
+  
+}
+

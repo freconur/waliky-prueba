@@ -37,7 +37,7 @@ function IndividualIntervalsExample() {
             <Link to="/bts/combos-bts">
               <img
                 className="d-block w-100 slider-responsive"
-                src={HEADER_IMAGE.HEADER_PROMOTION_COLLAGE_MOVIL}
+                src={HEADER_IMAGE.BANNER_COMBO_BTS}
                 alt="First slide"
               />
             </Link>

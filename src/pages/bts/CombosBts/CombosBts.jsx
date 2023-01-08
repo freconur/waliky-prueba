@@ -16,17 +16,18 @@ const CombosBts = () => {
   return (
     <div className="combo-bts">
       <div className="combo-bts__container">
-        <h1 className="combo-bts__title">nuestros combos de productos bts</h1>
+        <h1 className="combo-bts__title">nuestros combos BTS a un super precio</h1>
         <section className="combo-bts__section">
-          <div className="section-title__container">
+          {/* <div className="section-title__container">
             <h1 className="section-title">combo sublimado</h1>
-          </div>
+          </div> */}
           <ul className="section-info__container">
             {combosBts.map((item, index) => {
               return (
                 <li key={index}>
-                  <Link to={`/bts/combos-bts/${item.id}`}>
-                    <span>{item.name}</span>
+                  <Link className="combo__link" to={`/bts/combos-bts/${item.id}`}>
+                    <img className="combo__image" src={item.image} alt={item.name} />
+                    <h4 className="combo__title">{item.name}</h4>
                   </Link>
                 </li>
               );

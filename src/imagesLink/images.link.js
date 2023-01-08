@@ -21,6 +21,7 @@ export const IMAGES_LINK = {
   INSTAGRAM_ICON: "https://firebasestorage.googleapis.com/v0/b/apiwaliky.appspot.com/o/icons%2Finstagram.png?alt=media&token=51ba2846-a29a-4e74-8491-36deffed6a00",
   TIKTOK_ICON: "https://firebasestorage.googleapis.com/v0/b/apiwaliky.appspot.com/o/icons%2Ftik-tok.png?alt=media&token=6d956cf4-226a-4e8c-a666-7b2c2864ad50",
   WHATSAPP_ICON: "https://firebasestorage.googleapis.com/v0/b/apiwaliky.appspot.com/o/icons%2Fwhatsapp.png?alt=media&token=9111b2f6-d40f-4e7e-9ef2-ed45e5ba5688",
-  LOCATION_MAPS: "https://firebasestorage.googleapis.com/v0/b/apiwaliky.appspot.com/o/waliky-store-location%2Fwaliky-sotore-location.png?alt=media&token=ee0695c3-2a55-4ec7-ac7c-e5ddf5458388"
+  LOCATION_MAPS: "https://firebasestorage.googleapis.com/v0/b/apiwaliky.appspot.com/o/waliky-store-location%2Fwaliky-sotore-location.png?alt=media&token=ee0695c3-2a55-4ec7-ac7c-e5ddf5458388",
+  
   
 };

@@ -1,4 +1,4 @@
-import React, { useEffect, useReducer, useState } from "react";
+import React, { useEffect, useReducer } from "react";
 import { useParams } from "react-router-dom";
 import { getfilterComboBts } from "../../../../extension/functionBts";
 import { HEADER_IMAGE } from "../../../../imagesLink/headerImages";
@@ -14,18 +14,13 @@ const ComboPageDetails = () => {
     getfilterComboBts(dispatch, comboName);
   }, []);
 
-  //   console.log("comboBtsfilter", comboBtsfilter);
-  //   console.log("comboBtsfilter", comboBtsfilter.products);
-  // const products = comboBtsfilter.products;
-  console.log("products", products);
-  console.log("comboBts", comboBts);
   return (
     <div className="combo-bts-detail">
       <div className="combo-bts-detail__container">
         <div className="combo-bts__image-contianer">
           <img
             className="combo-bts__image"
-            src={HEADER_IMAGE.HEADER_BIOMBOS_MOVIL}
+            src={comboBts.image}
             alt=""
           />
         </div>
