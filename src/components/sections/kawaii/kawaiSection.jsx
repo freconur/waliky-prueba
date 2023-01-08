@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { IMAGES_LINK } from "../../../imagesLink/images.link";
+import { KAWAII_LINKS } from "../../../imagesLink/kawaiiLinks";
 import "../sections.css";
 
 const KawaiSection = () => {
@@ -10,7 +10,7 @@ const KawaiSection = () => {
       <div className="section__container">
         <img
           className="section__image"
-          src={IMAGES_LINK.SUBLIMADOS_PERSONALIZADOS}
+          src={KAWAII_LINKS.KAWAII_BANNER}
           alt=""
         />
         <div className="container__text">
