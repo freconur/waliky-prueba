@@ -12,7 +12,6 @@ const SideBarSticky = ({ title }) => {
   useEffect(() => {
     getBtsCategories(dispatch);
   }, []);
-  console.log("categories", categories);
   return (
     <div className="sidebar-sticky">
       <div className="sidebar-sticky__container">

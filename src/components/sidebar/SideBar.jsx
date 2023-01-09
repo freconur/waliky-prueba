@@ -1,15 +1,16 @@
 import React, { useEffect, useReducer } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { getBtsCategories } from "../../extension/functionBts";
 import { btsReducer, initialStateBts } from "../../reducer/bts.reducer";
 
 const SideBar = ({ title }) => {
   const [state, dispatch] = useReducer(btsReducer, initialStateBts);
   const { categories } = state;
+  const location = useLocation();
   useEffect(() => {
     getBtsCategories(dispatch);
   }, []);
-  console.log("categories", categories);
+
   return (
     <div className="sidebar">
       <div className="sidebar__container">
@@ -18,16 +19,22 @@ const SideBar = ({ title }) => {
           <h2 className="sidebar__title">{title}</h2>
         </div>
         <div className="sidebar__category">
-          <h3 className="sidebar__title-category">categorias</h3>
-          <ul className="sidebar__list-container">
-            {categories.map((item) => {
-              return (
-                <Link className="sidebar__link" to={`/bts/${item.name}`}>
-                  <li key={item.id}>{item.name}</li>
-                </Link>
-              );
-            })}
-          </ul>
+          {location.pathname === "/kawaii" ? (
+            <p>Los mejores productos kawaii para regalo.</p>
+          ) : (
+            <>
+              <h3 className="sidebar__title-category">categorias</h3>
+              <ul className="sidebar__list-container">
+                {categories.map((item, index) => {
+                  return (
+                    <Link className="sidebar__link" to={`/bts/${item.name}`}>
+                      <li key={index}>{item.name}</li>
+                    </Link>
+                  );
+                })}
+              </ul>
+            </>
+          )}
         </div>
       </div>
     </div>

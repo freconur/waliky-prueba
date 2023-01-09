@@ -5,18 +5,24 @@ import "../pageProducts.css";
 import { SideBarSticky } from "../../components/sidebar/sideBarSticky";
 import { ProductsItem } from "../../components/productsItem/ProductsItem";
 import { SideBar } from "../../components/sidebar/SideBar";
+import { useLocation } from "react-router-dom";
 
 const KawaiiPage = () => {
   const [state, dispatch] = useReducer(kawaiiReducer, initialStateKawaii);
   const { allProducts } = state;
+  const location = useLocation()
   useEffect(() => {
     getKawaii(dispatch);
   }, []);
 
-  console.log('allProducts', allProducts)
   return (
     <div className="products-store__container">
-      <SideBarSticky title="cartucheras"/>
+      {
+        !location.pathname === "/kawaii"
+        &&
+        <SideBarSticky title="cartucheras"/>
+
+      }
       <div className="products-store">
         <SideBar title="Kawaii" />
         <ProductsItem items={allProducts} />
