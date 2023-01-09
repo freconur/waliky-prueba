@@ -5,37 +5,45 @@ import { ButtonWhatsapp } from "./buttonWhatsapp/ButtonWhatsapp";
 import { MenuBurger } from "./MenuBurger/MenuBurger";
 import "./navbar.css";
 import { NavbarList } from "./navbarList/NavbarList";
+import MessengerCustomerChat from 'react-messenger-customer-chat';
 function useWindowsSize() {
-  const [size, setSize] = useState([window.innerHeight, window.innerWidth]) 
+  const [size, setSize] = useState([window.innerHeight, window.innerWidth]);
   useEffect(() => {
     const handleResize = () => {
-      setSize([window.innerHeight, window.innerWidth])
-    }
-    window.addEventListener("resize",handleResize)
-  },[])
-  return size
+      setSize([window.innerHeight, window.innerWidth]);
+    };
+    window.addEventListener("resize", handleResize);
+  }, []);
+  return size;
 }
 const Navbar = () => {
-  const [height, width]= useWindowsSize()
-  const [menuActive, setMenuActive] = useState(false)
+  const [height, width] = useWindowsSize();
+  const [menuActive, setMenuActive] = useState(false);
   useEffect(() => {
-    if(width>=720) {
-      setMenuActive(true)
+    if (width >= 720) {
+      setMenuActive(true);
     }
-    if(width<720) {
-      setMenuActive(false)
+    if (width < 720) {
+      setMenuActive(false);
     }
-  },[width])
+  }, [width]);
   return (
     <div className="navbar_waliky">
       <div className="navbar_container">
-          <Link className="logo__link" to="/">
-            <img className="logo" src={IMAGES_LINK.LOGO} alt="logo" />
-          </Link>
-        {menuActive && <NavbarList menuActive={menuActive} setMenuActive={setMenuActive}/>}
-        <MenuBurger  menuActive={menuActive} setMenuActive={setMenuActive}/>
+        <Link className="logo__link" to="/">
+          <img className="logo" src={IMAGES_LINK.LOGO} alt="logo" />
+        </Link>
+        {menuActive && (
+          <NavbarList menuActive={menuActive} setMenuActive={setMenuActive} />
+        )}
+        <MenuBurger menuActive={menuActive} setMenuActive={setMenuActive} />
       </div>
       <ButtonWhatsapp />
+      <MessengerCustomerChat
+        pageId="101360885474783"
+        appId="698097068630350"
+        // htmlRef="<REF_STRING>"
+      />
     </div>
   );
 };

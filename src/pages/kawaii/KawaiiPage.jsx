@@ -21,7 +21,6 @@ const KawaiiPage = () => {
         !location.pathname === "/kawaii"
         &&
         <SideBarSticky title="cartucheras"/>
-
       }
       <div className="products-store">
         <SideBar title="Kawaii" />
