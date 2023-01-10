@@ -5,7 +5,6 @@ import { ButtonWhatsapp } from "./buttonWhatsapp/ButtonWhatsapp";
 import { MenuBurger } from "./MenuBurger/MenuBurger";
 import "./navbar.css";
 import { NavbarList } from "./navbarList/NavbarList";
-import MessengerCustomerChat from 'react-messenger-customer-chat';
 function useWindowsSize() {
   const [size, setSize] = useState([window.innerHeight, window.innerWidth]);
   useEffect(() => {
@@ -39,11 +38,10 @@ const Navbar = () => {
         <MenuBurger menuActive={menuActive} setMenuActive={setMenuActive} />
       </div>
       <ButtonWhatsapp />
-      <MessengerCustomerChat
+      {/* <MessengerCustomerChat
         pageId="101360885474783"
         appId="698097068630350"
-        // htmlRef="<REF_STRING>"
-      />
+      /> */}
     </div>
   );
 };
