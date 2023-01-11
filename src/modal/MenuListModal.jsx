@@ -1,12 +1,15 @@
 import React, { useState } from "react";
+import ReactDOM from "react-dom";
 import { Link } from "react-router-dom";
-import "./navbarList.css";
+import './menuListModal.css'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown as down } from "@fortawesome/free-solid-svg-icons";
-const NavbarList = ({ menuActive, setMenuActive }) => {
+const MenuListModal = ({ menuActive, setMenuActive }) => {
   const [activeProducts, setActiveProducts] = useState(false);
-  return (
-    <ul className="navbar__list">
+
+  return ReactDOM.createPortal(
+    <div className="menu-list-modal">
+        <ul className="navbar__list">
       <Link
         onClick={() => setMenuActive(!menuActive)}
         className="navbar_list_link"
@@ -29,9 +32,7 @@ const NavbarList = ({ menuActive, setMenuActive }) => {
         <li className="navbar__list-li">nosotros</li>
       </Link>
       <Link
-        // onClick={() => setMenuActive(!menuActive)}
         className="navbar_list_link"
-        // to="/nosotros"
       >
       <li className={`navbar__list-li ${  activeProducts && "list-products--padding"}`} >
         <ul
@@ -44,17 +45,24 @@ const NavbarList = ({ menuActive, setMenuActive }) => {
           </div>
           {activeProducts && (
             <div className="list-products__container">
+                <Link onClick={() => setMenuActive(!menuActive)} to="/bts">
               <li>bts</li>
+                </Link>
+              <Link onClick={() => setMenuActive(!menuActive)} to="/kawaii">
               <li>kawaii</li>
+                </Link>
+              <Link onClick={() => setMenuActive(!menuActive)} to="/alquiler-de-cilindros-biombos">
               <li>biombos</li>
+                </Link>
             </div>
           )}
         </ul>
       </li>
       </Link>
-      {/* <li className="navbar__list__border--none">productos</li> */}
     </ul>
+    </div>,
+    document.getElementById("menuListPortal")
   );
 };
 
-export { NavbarList };
+export { MenuListModal };

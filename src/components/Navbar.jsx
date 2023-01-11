@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { IMAGES_LINK } from "../imagesLink/images.link";
+import { MenuListModal } from "../modal/MenuListModal";
 import { ButtonWhatsapp } from "./buttonWhatsapp/ButtonWhatsapp";
 import { MenuBurger } from "./MenuBurger/MenuBurger";
 import "./navbar.css";
@@ -18,14 +19,6 @@ function useWindowsSize() {
 const Navbar = () => {
   const [height, width] = useWindowsSize();
   const [menuActive, setMenuActive] = useState(false);
-  useEffect(() => {
-    if (width >= 720) {
-      setMenuActive(true);
-    }
-    if (width < 720) {
-      setMenuActive(false);
-    }
-  }, [width]);
   return (
     <div className="navbar_waliky">
       <div className="navbar_container">
@@ -35,7 +28,12 @@ const Navbar = () => {
         {menuActive && (
           <NavbarList menuActive={menuActive} setMenuActive={setMenuActive} />
         )}
+
         <MenuBurger menuActive={menuActive} setMenuActive={setMenuActive} />
+        
+        {
+          (menuActive && width<421) && <MenuListModal menuActive={menuActive} setMenuActive={setMenuActive} />
+        }
       </div>
       <ButtonWhatsapp />
       {/* <MessengerCustomerChat

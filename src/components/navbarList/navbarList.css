@@ -16,11 +16,10 @@
     background-color: var(--secondaryColor);
     color: var(--black);
     z-index: 90;
-    text-align: left;
     overflow: hidden;
     margin: initial;
   }
-  .navbar__list li {
+  .navbar__list-li {
     font-size: 1.1rem;
     color: var(--white);
     padding: 15px 10px;
@@ -32,9 +31,9 @@
     padding: initial;
   }
 
-  .navbar__list li:hover {
+  /* .navbar__list li:hover {
     background-color: var(--primaryColor);
-  }
+  } */
 }
 @media (max-width: 420px) {
   .navbar_container {
@@ -57,22 +56,27 @@
     overflow: hidden;
     /* min-height: 250px; */
   }
-  .navbar__list li {
+  .navbar__list-li {
+    text-align: left;
     font-size: 1.1rem;
     color: var(--white);
     padding: 15px 15px 15px 15px;
+    place-content: initial;
     /* margin: 10px 0; */
     /* height: 50px; */
     display: flex;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center; */
+    /* align-items: center; */
+
   }
   .list-products--padding {
-    padding-bottom: 0px;
+    /* padding-bottom: 0px; */
+    padding: initial;
   }
   .list-products {
     margin: initial;
     padding: initial;
+    list-style: none;
   }
   .down-icon {
     /* line-height: 20px; */
@@ -85,16 +89,32 @@
   }
 
   .list-products__container {
-    background-color: yellow;
-    width: 180px;
-    /* width: 100%; */
-    padding: initial;
+    background-color: var(--white);
+    width: 150px;
+    /* visibility: hidden;
+    transform: translateY(-3em); */
+    /* z-index: -1; */
+    /* transition: all 0.3s ease 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s; */
   }
+  /* .list-products:focus .list-products__container,
+  .list-products:focus-within .list-products__container,
+  .list-products:hover .list-products__container {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0s, 0s, 0.3s;
+  } */
+
   .list-products__container li {
     /* margin: auto; */
-    padding: 10px;
+    padding: 5px 0 5px 40px;
+    color: var(--colorText1);
   }
   .list-products__container li:hover {
     background-color: var(--secondaryColor);
+    color: var(--white);
+  }
+  .list-products__container a {
+    text-decoration: none;
   }
 }
