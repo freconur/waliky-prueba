@@ -112,7 +112,6 @@ export const getBtsCombos = async (dispatch) => {
 export const getfilterComboBts = async (dispatch, comboName) => {
   const itemCombo = doc(db, "combosbts", comboName);
   const itemsCombo = await getDoc(itemCombo);
-  console.log(comboName)
   if (itemsCombo.exists()) {
     dispatch({
       type: TYPES_BTS.GET_BTS_COMBOS_FILTER,
