@@ -12,28 +12,28 @@ const NavbarList = ({ menuActive, setMenuActive }) => {
         className="navbar_list_link"
         to="/"
       >
-        <li className="navbar__list__border">inicio</li>
+        <li className="bbb">inicio</li>
       </Link>
       <Link
         onClick={() => setMenuActive(!menuActive)}
         className="navbar_list_link"
         to="/contacto"
       >
-        <li className="navbar__list__border">contactanos</li>
+        <li className="bbb">contactanos</li>
       </Link>
       <Link
         onClick={() => setMenuActive(!menuActive)}
         className="navbar_list_link"
         to="/nosotros"
       >
-        <li className="navbar__list__border">nosotros</li>
+        <li className="bbb">nosotros</li>
       </Link>
-      {/* <Link
-        onClick={() => setMenuActive(!menuActive)}
+      <Link
+        // onClick={() => setMenuActive(!menuActive)}
         className="navbar_list_link"
-        to="/nosotros"
-      > */}
-      <li className="navbar__list__border ">
+        // to="/nosotros"
+      >
+      <li className={`"aaaa" ${  activeProducts && "list-products--padding"}`} >
         <ul
           className="list-products"
           onClick={() => setActiveProducts(!activeProducts)}
@@ -51,7 +51,7 @@ const NavbarList = ({ menuActive, setMenuActive }) => {
           )}
         </ul>
       </li>
-      {/* </Link> */}
+      </Link>
       {/* <li className="navbar__list__border--none">productos</li> */}
     </ul>
   );
