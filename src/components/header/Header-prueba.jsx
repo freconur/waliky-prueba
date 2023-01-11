@@ -18,14 +18,14 @@ function useWindowsSize() {
 function IndividualIntervalsExample() {
   const [height, width] = useWindowsSize();
   const [menuActive, setMenuActive] = useState(false);
-  useEffect(() => {
-    if (width >= 840) {
-      setMenuActive(true);
-    }
-    if (width < 840) {
-      setMenuActive(false);
-    }
-  }, [width]);
+  // useEffect(() => {
+  //   if (width >= 840) {
+  //     setMenuActive(true);
+  //   }
+  //   if (width < 840) {
+  //     setMenuActive(false);
+  //   }
+  // }, [width]);
 
   return (
     <>
@@ -44,7 +44,7 @@ function IndividualIntervalsExample() {
           </Carousel.Item>
 
           <Carousel.Item interval={5000}>
-            <Link to="/bts">
+            <Link to="/alquiler-de-cilindros-biombos">
               <img
                 className="d-block w-100 slider-responsive"
                 src={HEADER_IMAGE.HEADER_BIOMBOS_MOVIL}
@@ -67,7 +67,7 @@ function IndividualIntervalsExample() {
             </Link>
           </Carousel.Item>
           <Carousel.Item interval={5000}>
-            <Link to="/bts">
+            <Link to="/alquiler-de-cilindros-biombos">
               <img
                 className="d-block w-100 h-450 slider-responsive"
                 src={HEADER_IMAGE.HEADER_BIOMBOS_WEB}

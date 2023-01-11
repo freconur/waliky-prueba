@@ -1,0 +1,79 @@
+@import '../../Variables.css';
+
+.cilindros-biombos {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.cilindros-biombos__container {
+    max-width: 1300px;
+    margin: 20px;
+    display: grid;
+    place-content: center;
+}
+.cilindros-biombos__section {
+    display: flex;
+    gap: 40px;
+}
+.cilindros-biombos__title {
+    margin: auto;
+    margin-bottom: 35px;
+    text-transform: capitalize;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+.cilindros-biombos__image-container {
+    max-width: 400px;
+}
+.cilindros-biombos__description-page {
+    font-size: 1.8rem;
+    color: var(--colorText1);
+    text-align: center;
+}
+.cilinbros-biombos__image {
+    width: 100%;
+} 
+.cilindros-biombos__text-container{
+    max-width: 400px;
+}
+.cilinbros-biombos__text {
+    font-size: 1.5rem;
+    color: var(--textColor2);
+}
+.tematicas-disponibles {
+    max-width: 1100px;
+    margin: auto;
+}
+.tematicas-disponibles__list {
+    display: grid;
+    /* grid-template-columns: repeat(2, minmax(100px, 300px)); */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 2fr));
+    gap: 40px;
+    list-style: none;
+
+}
+.tematicas-disponibles__title {
+    text-transform: capitalize;
+    text-align: center;
+    margin: 40px;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+.tematicas-disponibles__item {
+    border-radius: 10px;
+    overflow: hidden;
+}
+.tematicas-disponibles__image {
+    width: 100%;
+}
+.tematicas-disponibles__name {
+    text-transform: capitalize;
+    /* margin: auto; */
+    text-align: center;
+
+    background-color: var(--white);
+    border-radius: 0px 0px 10px 10px;
+    font-weight: 600;
+    margin: initial;
+    padding: 10px;
+}

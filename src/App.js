@@ -17,6 +17,8 @@ import { Nosotros } from './pages/nosotros/Nosotros';
 import { KawaiiPage } from './pages/kawaii/KawaiiPage';
 import { CombosBts } from './pages/bts/CombosBts/CombosBts';
 import ComboPageDetails from './pages/bts/CombosBts/ComboPageDetails/ComboPageDetails';
+import { CilindrosBiombos } from './pages/cilindrosBiombos/CilindrosBiombos';
+import { CilindrosBiombosTheme } from './pages/cilindrosBiombos/cilindrosBiombosTheme/CilindrosBiombosTheme';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -39,6 +41,8 @@ function App() {
         <Route  exact path="/bts/combos-bts" element={<CombosBts />} />
         <Route  exact path="/bts/combos-bts/:comboName" element={<ComboPageDetails />} />
         <Route  exact path="/contacto" element={<Contacto />} />
+        <Route  exact path="/alquiler-de-cilindros-biombos" element={<CilindrosBiombos />} />
+        <Route  exact path="/alquiler-de-cilindros-biombos/:cilindroBiomboId" element={<CilindrosBiombosTheme />} />
         <Route  exact path="/nosotros" element={<Nosotros />} />
         <Route  exact path="/kawaii" element={<KawaiiPage />} />
       </Routes>
