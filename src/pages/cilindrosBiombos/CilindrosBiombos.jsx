@@ -29,22 +29,6 @@ const CilindrosBiombos = () => {
           Reserva tus ciclindros y biombos para tu fiesta a unos precios
           increibles, echale un ojo a nuestras tematicas disponibles.
         </p>
-        {/* <div className="cilindros-biombos__section">
-          <div className="cilindros-biombos__image-container">
-            <img
-              className="cilinbros-biombos__image"
-              src={BIOMBOS_IMAGE.BIOMBOS_CILINDROS}
-              alt=""
-            />
-          </div>
-          <div className="cilindros-biombos__text-container">
-            <p className="cilinbros-biombos__text">
-              reserva tus ciclindros y biombos para tu fiesta. Puedes hacerlos
-              desde 150 soles
-            </p>
-          </div>
-        </div> */}
-
         <section className="tematicas-disponibles">
           <h2 className="tematicas-disponibles__title">
             Tematicas disponibles
@@ -53,7 +37,7 @@ const CilindrosBiombos = () => {
             {allThemes?.map((item, index) => {
               return (
                 <li className="tematicas-disponibles__item">
-                  <Link to={`${item.id}`}>
+                  <Link className="tematicas-disponibles__link" to={`${item.id}`}>
                     <img
                       className="tematicas-disponibles__image"
                       src={item.image}
