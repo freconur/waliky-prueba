@@ -3,10 +3,16 @@ import { Link } from "react-router-dom";
 import "./navbarList.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown as down } from "@fortawesome/free-solid-svg-icons";
-const NavbarList = ({ menuActive, setMenuActive }) => {
+const NavbarList = ({ width, menuActive, setMenuActive }) => {
   const [activeProducts, setActiveProducts] = useState(false);
+
   return (
     <ul className="navbar__list">
+      {
+        (width < 800 &&  width >= 421)
+        &&
+      <button onClick={() => setMenuActive(!menuActive)} className={`close-menu-nav-list ${!menuActive && "close-menu-nav-list__close"}`}>X</button>
+      }
       <Link
         onClick={() => setMenuActive(!menuActive)}
         className="navbar_list_link"
@@ -28,31 +34,39 @@ const NavbarList = ({ menuActive, setMenuActive }) => {
       >
         <li className="navbar__list-li">nosotros</li>
       </Link>
-      <Link
-        // onClick={() => setMenuActive(!menuActive)}
-        className="navbar_list_link"
-        // to="/nosotros"
-      >
-      <li className={`navbar__list-li ${  activeProducts && "list-products--padding"}`} >
-        <ul
-          className="list-products"
-          onClick={() => setActiveProducts(!activeProducts)}
+      <Link className="navbar_list_link">
+        <li
+          className={`navbar__list-li ${
+            activeProducts && "list-products--padding"
+          }`}
         >
-          <div className="list-products-ul">
-            productos
-            <FontAwesomeIcon className="down-icon" icon={down} />
-          </div>
-          {activeProducts && (
-            <div className="list-products__container">
-              <li>bts</li>
-              <li>kawaii</li>
-              <li>biombos</li>
+          <ul
+            className="list-products"
+            onClick={() => setActiveProducts(!activeProducts)}
+          >
+            <div className="list-products-ul">
+              productos
+              <FontAwesomeIcon className="down-icon" icon={down} />
             </div>
-          )}
-        </ul>
-      </li>
+            {activeProducts && (
+              <div className="list-products__container">
+                <Link onClick={() => setMenuActive(!menuActive)} to="/bts">
+                  <li>bts</li>
+                </Link>
+                <Link onClick={() => setMenuActive(!menuActive)} to="/kawaii">
+                  <li>kawaii</li>
+                </Link>
+                <Link
+                  onClick={() => setMenuActive(!menuActive)}
+                  to="/alquiler-de-cilindros-biombos"
+                >
+                  <li>biombos</li>
+                </Link>
+              </div>
+            )}
+          </ul>
+        </li>
       </Link>
-      {/* <li className="navbar__list__border--none">productos</li> */}
     </ul>
   );
 };

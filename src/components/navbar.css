@@ -4,11 +4,13 @@
   background: linear-gradient(90deg, #00b19f 14.97%, #4f31da 88.39%);
   width: 100%;
   height: 60px;
+  z-index: 4000;
 }
 .navbar_container {
   display: grid;
   grid-template-areas: "logo sercah list";
-  grid-template-columns: minmax(100px,150px) minmax(100px, 900px) minmax(100px,250px);
+  grid-template-columns: minmax(100px,150px) minmax(100px, 900px) minmax(100px,550px);
+  grid-template-columns: minmax(100px,150px) minmax(100px, 900px) auto;
   max-width: 1300px;
   margin: auto 10px;
 }
@@ -39,7 +41,7 @@
   font-size: 1.3rem;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 800px) {
   .navbar__list {
     display: none;
 

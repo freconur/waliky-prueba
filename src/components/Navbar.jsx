@@ -19,14 +19,19 @@ function useWindowsSize() {
 const Navbar = () => {
   const [height, width] = useWindowsSize();
   const [menuActive, setMenuActive] = useState(false);
+  useEffect(()=>{
+    if(width > 780) {
+      setMenuActive(true)
+    }
+  })
   return (
     <div className="navbar_waliky">
       <div className="navbar_container">
         <Link className="logo__link" to="/">
           <img className="logo" src={IMAGES_LINK.LOGO} alt="logo" />
         </Link>
-        {menuActive && (
-          <NavbarList menuActive={menuActive} setMenuActive={setMenuActive} />
+        {(menuActive) && (
+          <NavbarList width={width} menuActive={menuActive} setMenuActive={setMenuActive} />
         )}
 
         <MenuBurger menuActive={menuActive} setMenuActive={setMenuActive} />
