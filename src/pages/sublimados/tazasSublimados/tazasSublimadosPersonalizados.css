@@ -1,0 +1,66 @@
+.tazas-sublimado-custom {
+  width: 100%;
+  display: grid;
+  place-content: center;
+}
+.tazas-sublimado-custom_container {
+  max-width: 1300px;
+  display: grid;
+  place-content: center;
+  margin: 50px;
+}
+.tazas-sublimado-custom_container-card {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(100px, 400px));
+  gap: 30px;
+  place-content: center;
+}
+.tazas-sublimados-custom_card {
+  display: grid;
+  place-items: center;
+}
+.tazas-sublimados-custom__image {
+  width: 100%;
+}
+.tazas-sublimado-custom_title {
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 2rem;
+}
+.tazas-sublimada-custom_acordion {
+  max-width: 800px;
+  margin: auto;
+  padding: 40px;
+}
+
+@media (max-width: 780px) {
+  .tazas-sublimada-custom_acordion {
+    padding: initial;
+    margin-bottom: 30px;
+  }
+  .tazas-sublimada-custom_acordion p{
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  .tazas-sublimado-custom_container {
+    /* margin-bottom: 20px; */
+    margin: 20px;
+  }
+  .tazas-sublimado-custom_container-card {
+    gap: 10px
+  }
+  .tazas-sublimado-custom_title {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 420px) {
+    .tazas-sublimada-custom_acordion p{
+      font-size: initial;
+    }
+    .tazas-sublimado-custom_container {
+        margin: 10px;
+    }
+    .tazas-sublimado-custom_container-card {
+        grid-template-columns: 1fr
+      }
+  }

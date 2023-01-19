@@ -10,7 +10,7 @@
   background: var(--white);
   max-width: 1300px;
   display: grid;
-  grid-template-columns: minmax(100px, 500px) minmax(100px, 400px);
+  grid-template-columns: minmax(100px, 400px) minmax(100px, 400px);
   gap: 40px;
 }
 .cilindros-biombos__info-products {
