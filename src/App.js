@@ -19,6 +19,7 @@ import { CombosBts } from './pages/bts/CombosBts/CombosBts';
 import ComboPageDetails from './pages/bts/CombosBts/ComboPageDetails/ComboPageDetails';
 import { CilindrosBiombos } from './pages/cilindrosBiombos/CilindrosBiombos';
 import { CilindrosBiombosTheme } from './pages/cilindrosBiombos/cilindrosBiombosTheme/CilindrosBiombosTheme';
+import { TazasSublimadosPersonalizados } from './pages/sublimados/tazasSublimados/TazasSublimadosPersonalizados';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -45,6 +46,7 @@ function App() {
         <Route  exact path="/alquiler-de-cilindros-biombos/:cilindroBiomboId" element={<CilindrosBiombosTheme />} />
         <Route  exact path="/nosotros" element={<Nosotros />} />
         <Route  exact path="/kawaii" element={<KawaiiPage />} />
+        <Route  exact path="/sublimados/tazas-sublimados-personalizados" element={<TazasSublimadosPersonalizados />} />
       </Routes>
      </Layout>
     </BrowserRouter>
