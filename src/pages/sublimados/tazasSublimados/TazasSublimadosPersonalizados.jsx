@@ -1,5 +1,6 @@
 import React from "react";
 import { Accordion } from "react-bootstrap";
+import { TAZAS_SUBLIMADOS_CUSTOM_IMAGE } from "../../../imagesLink/sublimados/tazas-sublimados-custom";
 import "./tazasSublimadosPersonalizados.css";
 const TazasSublimadosPersonalizados = () => {
   return (
@@ -14,7 +15,7 @@ const TazasSublimadosPersonalizados = () => {
           <div className="tazas-sublimados-custom_card">
             <img
               className="tazas-sublimados-custom__image"
-              src="https://firebasestorage.googleapis.com/v0/b/apiwaliky.appspot.com/o/biombos%2Fcombo-cinlindros-biombos-dragon-ball.jpg?alt=media&token=3efd2041-50d4-4e34-9bdc-d8eefaee575e"
+              src={TAZAS_SUBLIMADOS_CUSTOM_IMAGE.TAZAS_SUBLIMADOS_CUSTOM_PLANTILLAS}
               alt=""
             />
             <h3>plantillas</h3>
@@ -22,10 +23,10 @@ const TazasSublimadosPersonalizados = () => {
           <div className="tazas-sublimados-custom_card">
             <img
               className="tazas-sublimados-custom__image"
-              src="https://firebasestorage.googleapis.com/v0/b/apiwaliky.appspot.com/o/biombos%2Fcombo-cinlindros-biombos-dragon-ball.jpg?alt=media&token=3efd2041-50d4-4e34-9bdc-d8eefaee575e"
+              src={TAZAS_SUBLIMADOS_CUSTOM_IMAGE.TAZAS_SUBLIMADOS_CUSTOM_DISENO}
               alt=""
             />
-            <h3>Disenos</h3>
+            <h3>diseños</h3>
           </div>
         </div>
       </section>

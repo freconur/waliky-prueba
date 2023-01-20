@@ -1,3 +1,4 @@
+@import "../../../Variables.css";
 .tazas-sublimado-custom {
   width: 100%;
   display: grid;
@@ -18,7 +19,16 @@
 .tazas-sublimados-custom_card {
   display: grid;
   place-items: center;
+  overflow: hidden;
+  border-radius: 20px;
+  background-color: var(--white);
 }
+.tazas-sublimados-custom_card h3 {
+  color: var(--colorText6);
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+
 .tazas-sublimados-custom__image {
   width: 100%;
 }
@@ -38,7 +48,7 @@
     padding: initial;
     margin-bottom: 30px;
   }
-  .tazas-sublimada-custom_acordion p{
+  .tazas-sublimada-custom_acordion p {
     font-size: 1.5rem;
     font-weight: 600;
   }
@@ -47,20 +57,20 @@
     margin: 20px;
   }
   .tazas-sublimado-custom_container-card {
-    gap: 10px
+    gap: 10px;
   }
   .tazas-sublimado-custom_title {
     margin-bottom: 30px;
   }
 }
 @media (max-width: 420px) {
-    .tazas-sublimada-custom_acordion p{
-      font-size: initial;
-    }
-    .tazas-sublimado-custom_container {
-        margin: 10px;
-    }
-    .tazas-sublimado-custom_container-card {
-        grid-template-columns: 1fr
-      }
+  .tazas-sublimada-custom_acordion p {
+    font-size: initial;
   }
+  .tazas-sublimado-custom_container {
+    margin: 10px;
+  }
+  .tazas-sublimado-custom_container-card {
+    grid-template-columns: 1fr;
+  }
+}

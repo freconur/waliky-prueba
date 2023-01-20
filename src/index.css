@@ -19,7 +19,9 @@ code {
 body {
   margin: 0;
   padding: 0;
-  background: #fbfbfb;
+  /* background: #fbfbfb; */
+  background: #f9f9f9;
+  
   color: #1E1E1F;
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
 }
