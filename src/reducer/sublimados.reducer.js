@@ -8,7 +8,7 @@ export const initialStateSublimados = {
 export const sublimadosReducer = (state = initialStateSublimados, action) => {
     switch(action.type) {
     case TYPES_SUBLIMADOS.GET_TAZAS_SUBLIMADOS_PLANTILLAS: {
-        console.log('polos', action.payload2)
+        console.log('tazasPlantillas', action.payload)
         return{
             ...state,
             tazasSublimadosPlantillas: action.payload

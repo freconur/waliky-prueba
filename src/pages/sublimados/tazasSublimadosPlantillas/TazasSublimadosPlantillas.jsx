@@ -13,6 +13,7 @@ import {
 import { SidebarTazasSublimadosDisenos } from "../../../components/sidebar/sibebarTazasSublimadosDisenos/sidebarTazasSublimadosDisenos";
 import { useParams } from "react-router-dom";
 const TazasSublimadosPlantillas = () => {
+
   const { idPlantillas } = useParams();
   const [state, dispatch] = useReducer(
     sublimadosReducer,
@@ -23,7 +24,7 @@ const TazasSublimadosPlantillas = () => {
   useEffect(() => {
     getTazasSublimadasPlantillas(dispatch, idPlantillas);
     getCategoriesTazasSublimadasPlantillas(dispatch);
-  }, []);
+  }, [idPlantillas]);
   return (
     <div className="products-store__container">
       {/* {

@@ -12,7 +12,6 @@ const SidebarTazasSublimadosDisenos = ({itemsCategories}) => {
   // useEffect(() => {
   //   getCategoriesTazasSublimadasPlantillas(dispatch);
   // }, []);
-  console.log('idPlantillas',idPlantillas)
   return (
     <div className="sidebar">
       <div className="sidebar__container">
@@ -25,8 +24,8 @@ const SidebarTazasSublimadosDisenos = ({itemsCategories}) => {
                 {itemsCategories.map((item, index) => {
                   return (
                     // <Link className="sidebar__link" to={`/sublimados/tazas-sublimados-personalizados/${item.name}`}>
-                    <Link className="sidebar__link" to={`/sublimados/tazas-sublimados-personalizados/${item.link}-${item.id}`}>
-                      <li key={index}>{item.name}</li>
+                    <Link className="sidebar__link" to={`/sublimados/tazas-sublimados-personalizados/${item.link}`}>
+                      <li key={item.id}>{item.name}</li>
                     </Link>
                   );
                 })}
