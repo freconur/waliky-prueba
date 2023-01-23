@@ -1,6 +1,9 @@
 import React from "react";
+import { useParams } from "react-router-dom";
 // import './productItem.css'
 const ProductsItem = ({ items }) => {
+  const {idPlantillas} = useParams()
+  console.log('product item plantillas',idPlantillas)
   return (
     <ul className="products-items">
       {items.map((item) => {

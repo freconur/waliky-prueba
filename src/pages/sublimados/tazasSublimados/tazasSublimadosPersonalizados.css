@@ -27,6 +27,7 @@
   color: var(--colorText6);
   font-size: 1.5rem;
   text-transform: capitalize;
+  margin: 10px 0;
 }
 
 .tazas-sublimados-custom__image {

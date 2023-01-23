@@ -1,36 +1,23 @@
-import { TYPES } from "./products.action"
+import { TYPES_SUBLIMADOS } from "./sublimados.action"
 
-export const initialState = {
-    sublimados:[],
-    polos: [],
-    tazas: [],
-    conjin: [],
+export const initialStateSublimados = {
+    tazasSublimadosPlantillas:[],
+    categoriesTazasSublimadasDisenos: []
 }
 
-export const productsReducer = (state = initialState, action) => {
+export const sublimadosReducer = (state = initialStateSublimados, action) => {
     switch(action.type) {
-    case TYPES.GET_POLOS_SUBLIMADOS: {
-        // console.log('polos', action.payload)
+    case TYPES_SUBLIMADOS.GET_TAZAS_SUBLIMADOS_PLANTILLAS: {
+        console.log('polos', action.payload2)
         return{
             ...state,
-            polos: action.payload
+            tazasSublimadosPlantillas: action.payload
         }
     }
-    case TYPES.GET_COJIN_SUBLIMADOS: {
-        console.log('cojin')
-        
-    }
-    case TYPES.GET_TAZAS_SUBLIMADOS: {
-        console.log('tazas')
-        
-    }
-    case TYPES.GET_BTS_CATEGORIES: {
-        
-    }
-    case TYPES.GET_SUBLIMADOS: {
-        return { 
+    case TYPES_SUBLIMADOS.GET_CATEGORIES_TAZAS_SUBLIMADOS_DISENOS: {
+        return{
             ...state,
-            sublimados: action.payload
+            categoriesTazasSublimadasDisenos: action.payload
         }
     }
     default:

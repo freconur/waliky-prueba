@@ -2,7 +2,7 @@ import './App.css';
 import { BrowserRouter,Routes, Route } from 'react-router-dom'
 import { Layout } from './Container/Layout';
 import { Home } from './pages/Home';
-import { Sublimados } from './pages/sublimados/Sublimados';
+// import { Sublimados } from './pages/sublimados/Sublimados';
 import { Bts } from './pages/bts/Bts';
 import { CartucherasBtsPage } from './pages/bts/cartucherasBtsPage/CartucherasBtsPage';
 import { PolosBtsPage } from './pages/bts/polosBtsPage/PolosBtsPage';
@@ -20,6 +20,7 @@ import ComboPageDetails from './pages/bts/CombosBts/ComboPageDetails/ComboPageDe
 import { CilindrosBiombos } from './pages/cilindrosBiombos/CilindrosBiombos';
 import { CilindrosBiombosTheme } from './pages/cilindrosBiombos/cilindrosBiombosTheme/CilindrosBiombosTheme';
 import { TazasSublimadosPersonalizados } from './pages/sublimados/tazasSublimados/TazasSublimadosPersonalizados';
+import { TazasSublimadosPlantillas } from './pages/sublimados/tazasSublimadosPlantillas/TazasSublimadosPlantillas';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -29,7 +30,7 @@ function App() {
      <Layout>
       <Routes>
         <Route  exact path="/" element={<Home />} />
-        <Route  exact path="/sublimados" element={<Sublimados />} />
+        {/* <Route  exact path="/sublimados" element={<Sublimados />} /> */}
         <Route  exact path="/bts" element={<Bts />} />
         <Route  exact path="/bts/cartucheras" element={<CartucherasBtsPage />} />
         <Route  exact path="/bts/polos" element={<PolosBtsPage />} />
@@ -47,6 +48,8 @@ function App() {
         <Route  exact path="/nosotros" element={<Nosotros />} />
         <Route  exact path="/kawaii" element={<KawaiiPage />} />
         <Route  exact path="/sublimados/tazas-sublimados-personalizados" element={<TazasSublimadosPersonalizados />} />
+        {/* <Route  exact path="/sublimados/tazas-sublimados-personalizados/plantillas" element={<TazasSublimadosPlantillas />} /> */}
+        <Route  exact path="/sublimados/tazas-sublimados-personalizados/:idPlantillas" element={<TazasSublimadosPlantillas />} />
       </Routes>
      </Layout>
     </BrowserRouter>
