@@ -21,6 +21,7 @@ import { CilindrosBiombos } from './pages/cilindrosBiombos/CilindrosBiombos';
 import { CilindrosBiombosTheme } from './pages/cilindrosBiombos/cilindrosBiombosTheme/CilindrosBiombosTheme';
 import { TazasSublimadosPersonalizados } from './pages/sublimados/tazasSublimados/TazasSublimadosPersonalizados';
 import { TazasSublimadosPlantillas } from './pages/sublimados/tazasSublimadosPlantillas/TazasSublimadosPlantillas';
+import { TazasSublimadosPersonalizadosDisenos } from './pages/sublimados/tazasSublimadosPersonalizadosDisenos/tazasSublimadosPersonalizadosDisenos';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -49,7 +50,8 @@ function App() {
         <Route  exact path="/kawaii" element={<KawaiiPage />} />
         <Route  exact path="/sublimados/tazas-sublimados-personalizados" element={<TazasSublimadosPersonalizados />} />
         {/* <Route  exact path="/sublimados/tazas-sublimados-personalizados/plantillas" element={<TazasSublimadosPlantillas />} /> */}
-        <Route  exact path="/sublimados/tazas-sublimados-personalizados/:idPlantillas" element={<TazasSublimadosPlantillas />} />
+        <Route  exact path="/sublimados/tazas-sublimados-personalizados/:idDisenos" element={<TazasSublimadosPlantillas />} />
+        <Route  exact path="/sublimados/tazas-sublimados-personalizados/plantillas" element={<TazasSublimadosPersonalizadosDisenos />} />
       </Routes>
      </Layout>
     </BrowserRouter>

@@ -12,4 +12,6 @@ export const HEADER_IMAGE = {
     BANNER_COMBO_BTS: "https://firebasestorage.googleapis.com/v0/b/apiwaliky.appspot.com/o/bts%2Fheader-bts%2Fbanner-combo-fan.jpg?alt=media&token=52324318-35e6-40ce-8447-de7f5a600e3d",
   BANNER_COMBO_BTS_FAN: "https://firebasestorage.googleapis.com/v0/b/apiwaliky.appspot.com/o/bts%2Fheader-bts%2Fcombo-fan.jpg?alt=media&token=f01fc8b3-2499-4558-bb8a-d8a20b23aebe",
   BANNER_COMBO_BTS_SUBLIMADOS: "https://firebasestorage.googleapis.com/v0/b/apiwaliky.appspot.com/o/bts%2Fheader-bts%2Fcombo-sublimados.jpg?alt=media&token=0593cb43-e4f3-4271-a8d5-e83cebd30aa2",
+  BANNER_TAZAS_SUBLIMADOS_CUSTOM_WEB: "https://firebasestorage.googleapis.com/v0/b/apiwaliky.appspot.com/o/sublimados%2Ftazas-sublimados-custom%2Fbanner-tazas-sublimadas-custom%2Fbanner-tazas-sublimadas-custom.jpg?alt=media&token=51d95a9d-8a14-4e5b-b840-bbf95b5cd082",
+  BANNER_TAZAS_SUBLIMADOS_CUSTOM_MOVIL: "https://firebasestorage.googleapis.com/v0/b/apiwaliky.appspot.com/o/sublimados%2Ftazas-sublimados-custom%2Fbanner-tazas-sublimadas-custom%2Fbanner-tazas-sublimadas-custom-movil.jpg?alt=media&token=281a8511-175d-40e5-ab56-962e984375e9",
 };

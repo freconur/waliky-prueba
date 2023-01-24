@@ -12,15 +12,14 @@ import { TYPES_PATH } from "./pathFirebase/pathSublimados";
   
   const db = getFirestore(app);
 
-  export const getTazasSublimadasPlantillas = async (dispatch, idPlantillas) => {
-
+  export const getTazasSublimadasPlantillas = async (dispatch, idDisenos) => {
     const colRefDiseno =  collection(db, "/sublimados/fXfA8pPqJfTFdDiAbUbu/taza-subliamdos-disenos");
     onSnapshot(colRefDiseno, (snapshot) => {
       const AllTazasPlantillas = [];
       snapshot.docs.forEach((doc) => {
         AllTazasPlantillas.push({ ...doc.data(), id: doc.id });
       });
-      const findIdDiseno =  AllTazasPlantillas.find(item => item.link === idPlantillas)
+      const findIdDiseno =  AllTazasPlantillas.find(item => item.link === idDisenos)
 
       const colRef = collection(db, `/sublimados/fXfA8pPqJfTFdDiAbUbu/taza-subliamdos-disenos/${findIdDiseno.id}/disenos${findIdDiseno.link}`);
     
@@ -31,23 +30,7 @@ import { TYPES_PATH } from "./pathFirebase/pathSublimados";
       });
       dispatch({ type: TYPES_SUBLIMADOS.GET_TAZAS_SUBLIMADOS_PLANTILLAS, payload: tazasPlantillas});
     });
-    console.log('findIdDiseno',findIdDiseno)
-
-      console.log('AllTazasPlantillas',AllTazasPlantillas)
-      console.log('idPlantillas',idPlantillas)
     });
-    // const colRef = collection(db, TYPES_PATH.TAZAS_SUBLIMADOS_PLATILLAS);
-    
-
-    // const colRef = collection(db, `/sublimados/fXfA8pPqJfTFdDiAbUbu/taza-subliamdos-disenos/${findIdDiseno.id}/disenos${findIdDiseno.link}`);
-    
-    // onSnapshot(colRef, (snapshot) => {
-    //   let tazasPlantillas = [];
-    //   snapshot.docs.forEach((doc) => {
-    //     tazasPlantillas.push({ ...doc.data(), id: doc.id });
-    //   });
-    //   dispatch({ type: TYPES_SUBLIMADOS.GET_TAZAS_SUBLIMADOS_PLANTILLAS, payload: tazasPlantillas, payload2: idPlantillas  });
-    // });
   };
   export const getCategoriesTazasSublimadasPlantillas = (dispatch) => {
     const colRef = collection(db, TYPES_PATH.CATEGORIES_TAZAS_SUBLIMADOS_PLANTILLAS);

@@ -5,7 +5,7 @@ import "../sections.css";
 const BtsSection = () => {
   return (
     <section className="section">
-      <h2 className="section__title">BTS</h2>
+      <h2 className="section__title"><span style={{ color: "#c3c3c3" }}>productos</span> BTS</h2>
       <div className="section__container">
         <img className="section__image" src={IMAGES_LINK.BTS_SECTION} alt="" />
         <div className="container__text">

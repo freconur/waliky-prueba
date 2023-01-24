@@ -52,7 +52,18 @@ function IndividualIntervalsExample() {
               />
             </Link>
           </Carousel.Item>
+
+          <Carousel.Item interval={5000}>
+            <Link to="/sublimados/tazas-sublimados-personalizados/">
+              <img
+                className="d-block w-100 slider-responsive"
+                src={HEADER_IMAGE.BANNER_TAZAS_SUBLIMADOS_CUSTOM_MOVIL}
+                alt="First slide"
+              />
+            </Link>
+          </Carousel.Item>
         </Carousel>
+        
       )}
 
       {width >= 840 && (
@@ -71,6 +82,15 @@ function IndividualIntervalsExample() {
               <img
                 className="d-block w-100 h-450 slider-responsive"
                 src={HEADER_IMAGE.HEADER_BIOMBOS_WEB}
+                alt="First slide"
+              />
+            </Link>
+          </Carousel.Item>
+          <Carousel.Item interval={5000}>
+            <Link to="/sublimados/tazas-sublimados-personalizados/">
+              <img
+                className="d-block w-100 h-450 slider-responsive"
+                src={HEADER_IMAGE.BANNER_TAZAS_SUBLIMADOS_CUSTOM_WEB}
                 alt="First slide"
               />
             </Link>
