@@ -12,6 +12,8 @@ import {
 } from "../../../reducer/sublimados.reducer";
 import { SidebarTazasSublimadosDisenos } from "../../../components/sidebar/sibebarTazasSublimadosDisenos/sidebarTazasSublimadosDisenos";
 import { useParams } from "react-router-dom";
+import { SideBarSticky } from "../../../components/sidebar/sideBarSticky";
+import { SideBarStickyTazasSublimadas } from "../../../components/sidebar/sibebarTazasSublimadosDisenos/sidebarStickyTazasSublimados";
 const TazasSublimadosPlantillas = () => {
 
   const { idDisenos } = useParams();
@@ -32,8 +34,10 @@ const TazasSublimadosPlantillas = () => {
         &&
         <SideBarSticky title="cartucheras"/>
       } */}
+        <SideBarStickyTazasSublimadas itemsCategories={categoriesTazasSublimadasDisenos} />
       <div className="products-store">
         {/* <SideBar title="tazas sublimados plantillas" /> */}
+
         <SidebarTazasSublimadosDisenos
           itemsCategories={categoriesTazasSublimadasDisenos}
         />

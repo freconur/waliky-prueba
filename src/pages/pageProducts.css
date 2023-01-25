@@ -144,7 +144,7 @@
         width: 100%;
         background: red;
         display: block;
-        /* z-index: 100; */
+        z-index: 6000;
     }
     .sidebar-sticky__title-page {
         margin: initial;
@@ -216,7 +216,10 @@
 }
 @media (max-width: 420px) { 
     .products-items {
-        grid-template-columns: 1fr;
+        grid-template-columns: minmax(200px, 420px);
+      }
+      .products-store  {
+        margin: 10px 0px;
       }
 }
 @media (max-width: 1024px) { 
