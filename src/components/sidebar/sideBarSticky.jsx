@@ -5,7 +5,7 @@ import { btsReducer, initialStateBts } from "../../reducer/bts.reducer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFilter as filtro } from "@fortawesome/free-solid-svg-icons";
 
-const SideBarSticky = ({ title, itemsCategories }) => {
+const SideBarSticky = ({ title }) => {
   const [state, dispatch] = useReducer(btsReducer, initialStateBts);
   const { categories } = state;
   const [openCategoryList, setOpenCategoryList] = useState(false);
@@ -32,7 +32,7 @@ const SideBarSticky = ({ title, itemsCategories }) => {
               >
                 X
               </span>
-              {itemsCategories.map((item) => {
+              {categories.map((item) => {
                 return (
                   <Link
                     onClick={() => setOpenCategoryList(!openCategoryList)}
