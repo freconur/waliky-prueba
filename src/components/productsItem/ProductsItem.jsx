@@ -25,9 +25,9 @@ const ProductsItem = ({ items }) => {
                 }
               </div>
               <div className="products-item__info-text">
-                <p>{item?.marca}</p>
-                <span>{item.name}</span>
-                <p>S/ {item?.price}</p>
+                <p className="products-item__info-text__marca">{item?.marca}</p>
+                <p className="products-item__info-text__name">{item.name}</p>
+                <p className="products-item__info-text__price">S/ {item?.price}</p>
               </div>
             </div>
           </li>

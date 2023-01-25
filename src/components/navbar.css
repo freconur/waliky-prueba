@@ -4,13 +4,15 @@
   background: linear-gradient(90deg, #00b19f 14.97%, #4f31da 88.39%);
   width: 100%;
   height: 60px;
-  z-index: 4000;
 }
 .navbar_container {
   display: grid;
   grid-template-areas: "logo sercah list";
-  grid-template-columns: minmax(100px,150px) minmax(100px, 900px) minmax(100px,550px);
-  grid-template-columns: minmax(100px,150px) minmax(100px, 900px) auto;
+  grid-template-columns: minmax(100px, 150px) minmax(100px, 900px) minmax(
+      100px,
+      550px
+    );
+  grid-template-columns: minmax(100px, 150px) minmax(100px, 900px) auto;
   max-width: 1300px;
   margin: auto 10px;
 }
@@ -44,17 +46,15 @@
 @media (max-width: 800px) {
   .navbar__list {
     display: none;
-
-    
   }
   .navbar_container {
     grid-template-areas: "logo sercah list";
-    grid-template-columns: 1fr 3fr .5fr;
+    grid-template-columns: 1fr 3fr 0.5fr;
   }
 }
 @media (max-width: 420px) {
-    .navbar__list {
-      
-    }
-    
+  .navbar_waliky {
+    /* position: relative;
+    z-index: 180; */
   }
+}
