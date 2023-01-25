@@ -28,7 +28,8 @@ const TazasSublimadosPersonalizados = () => {
             </Link>
           </div>
           <div className="tazas-sublimados-custom_card">
-            <Link to="/sublimados/tazas-sublimados-personalizados/:idPlantillas">
+            {/* <Link to="/sublimados/tazas-sublimados-personalizados/:idPlantillas"> */}
+            <Link to="/sublimados/tazas-sublimados-personalizados/DragonBall">
               <img
                 className="tazas-sublimados-custom__image"
                 src={
