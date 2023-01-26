@@ -233,6 +233,7 @@
   }
   .product-item__image__container {
     max-width: 150px;
+    /* max-width: 100%; */
   }
   .products-item__info {
     display: flex;

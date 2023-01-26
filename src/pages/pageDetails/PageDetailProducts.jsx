@@ -10,7 +10,8 @@ const PageDetailProducts = () => {
         <div className="page-detail-product-detail">
           <div className="page-detail-product-detail__container">
             <div className="page-detail-product__image-contianer">
-            <div className="product-item__image__container">
+            {/* <div className="product-item__image__container"> */}
+            <div>
                   {Array.isArray(product.image) ? (
                     <img
                       className="page-detail-product__image"
