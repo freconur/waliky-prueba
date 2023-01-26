@@ -1,8 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 // import './productItem.css'
-const ProductsItem = ({ items }) => {
-
+const ProductsItem = ({ items,loader }) => {
   const addLocalStorageItem = (product) => {
     // const localStorageItem = localStorage.setItem()
     const localStorageProduct = localStorage.setItem('CURRENT_PRODUCT',JSON.stringify(product))
@@ -11,6 +10,8 @@ const ProductsItem = ({ items }) => {
   }
 
   return (
+         
+
     <ul className="products-items">
       {items.map((item) => {
         {console.log('item',item)}
@@ -19,6 +20,7 @@ const ProductsItem = ({ items }) => {
             <Link className="link-product-detail" to={`/detalle-producto/${item.name}-${item.id}`}>
               <div className="products-item__info">
                 <div className="product-item__image__container">
+                  
                   {Array.isArray(item.image) ? (
                     <img
                       className="product-item__image"
@@ -32,6 +34,7 @@ const ProductsItem = ({ items }) => {
                       alt=""
                     />
                   )}
+                
                 </div>
                 <div className="products-item__info-text">
                   <p className="products-item__info-text__marca">
@@ -51,6 +54,7 @@ const ProductsItem = ({ items }) => {
         );
       })}
     </ul>
+        
   );
 };
 

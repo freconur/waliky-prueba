@@ -10,9 +10,11 @@ import { useLocation } from "react-router-dom";
 const KawaiiPage = () => {
   const [state, dispatch] = useReducer(kawaiiReducer, initialStateKawaii);
   const { allProducts } = state;
+
   const location = useLocation()
   useEffect(() => {
     getKawaii(dispatch);
+
   }, []);
 
   return (
