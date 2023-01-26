@@ -13,13 +13,13 @@ const PageDetailProducts = () => {
             <div className="product-item__image__container">
                   {Array.isArray(product.image) ? (
                     <img
-                      className="product-item__image"
+                      className="page-detail-product__image"
                       src={product.image[0]}
                       alt=""
                     />
                   ) : (
                     <img
-                      className="product-item__image"
+                      className="page-detail-product__image"
                       src={product.image}
                       alt=""
                     />
