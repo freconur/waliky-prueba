@@ -11,7 +11,9 @@
   grid-template-columns: 25% 65%;
   margin: 10px 20px;
 }
-
+.link-product-detail {
+  text-decoration: none;
+}
 .sidebar {
   grid-area: sidebar;
   max-width: 250px;

@@ -16,7 +16,7 @@ const ProductsItem = ({ items }) => {
         {console.log('item',item)}
         return (
           <li onClick={() => addLocalStorageItem(item)} className="products-item__container" key={item.id}>
-            <Link to={`/detalle-producto/${item.name}-${item.id}`}>
+            <Link className="link-product-detail" to={`/detalle-producto/${item.name}-${item.id}`}>
               <div className="products-item__info">
                 <div className="product-item__image__container">
                   {Array.isArray(item.image) ? (
@@ -38,9 +38,12 @@ const ProductsItem = ({ items }) => {
                     {item?.marca}
                   </p>
                   <p className="products-item__info-text__name">{item.name}</p>
+                  <div className="products-item__info-price-container">
                   <p className="products-item__info-text__price">
                     S/ {item?.price}
                   </p>
+                    <button>ver</button>
+                  </div>
                 </div>
               </div>
             </Link>

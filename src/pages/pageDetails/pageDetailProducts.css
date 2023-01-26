@@ -55,6 +55,21 @@
   text-transform: capitalize;
   font-size: 0.9rem;
 }
+.products-item__info-price-container {
+    display: flex;
+    justify-content: space-between;
+}
+.products-item__info-price-container button{
+    border: none;
+    background: #9105fb;
+    border-radius: 10px;
+    color: var(--white);
+    width: 40px;
+    /* text-transform: capitalize; */
+    font-weight: 600;
+    height: 25px;
+    line-height: 20px;
+}
 .page-detail-product__price-container--negrita {
   font-weight: 600;
   font-size: 1.3rem;

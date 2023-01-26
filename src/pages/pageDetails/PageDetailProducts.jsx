@@ -10,11 +10,26 @@ const PageDetailProducts = () => {
         <div className="page-detail-product-detail">
           <div className="page-detail-product-detail__container">
             <div className="page-detail-product__image-contianer">
-              <img
+            <div className="product-item__image__container">
+                  {Array.isArray(product.image) ? (
+                    <img
+                      className="product-item__image"
+                      src={product.image[0]}
+                      alt=""
+                    />
+                  ) : (
+                    <img
+                      className="product-item__image"
+                      src={product.image}
+                      alt=""
+                    />
+                  )}
+                </div>
+              {/* <img
                 className="page-detail-product__image"
                 src={product.image}
                 alt=""
-              />
+              /> */}
             </div>
             <div className="page-detail-product__info-products">
               <div className="page-detail-product__info-products__container">
