@@ -82,6 +82,7 @@
   text-overflow: ellipsis;
   overflow: hidden;
   padding: 5px 10px;
+  width: 100%;
 }
 .products-item__info-text__marca {
   margin: 0 0 10px 0;
