@@ -22,6 +22,7 @@ import { CilindrosBiombosTheme } from './pages/cilindrosBiombos/cilindrosBiombos
 import { TazasSublimadosPersonalizados } from './pages/sublimados/tazasSublimados/TazasSublimadosPersonalizados';
 import { TazasSublimadosPlantillas } from './pages/sublimados/tazasSublimadosPlantillas/TazasSublimadosPlantillas';
 import { TazasSublimadosPersonalizadosDisenos } from './pages/sublimados/tazasSublimadosPersonalizadosDisenos/tazasSublimadosPersonalizadosDisenos';
+import { PageDetailProducts } from './pages/pageDetails/PageDetailProducts';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -48,6 +49,7 @@ function App() {
         <Route  exact path="/alquiler-de-cilindros-biombos/:cilindroBiomboId" element={<CilindrosBiombosTheme />} />
         <Route  exact path="/nosotros" element={<Nosotros />} />
         <Route  exact path="/kawaii" element={<KawaiiPage />} />
+        <Route  exact path="/detalle-producto/:productDetail" element={<PageDetailProducts />} />
         <Route  exact path="/sublimados/tazas-sublimados-personalizados" element={<TazasSublimadosPersonalizados />} />
         {/* <Route  exact path="/sublimados/tazas-sublimados-personalizados/plantillas" element={<TazasSublimadosPlantillas />} /> */}
         <Route  exact path="/sublimados/tazas-sublimados-personalizados/:idDisenos" element={<TazasSublimadosPlantillas />} />
