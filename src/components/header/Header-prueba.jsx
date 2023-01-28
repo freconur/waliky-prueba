@@ -62,6 +62,15 @@ function IndividualIntervalsExample() {
               />
             </Link>
           </Carousel.Item>
+          <Carousel.Item interval={5000}>
+            <Link to="/sublimados/tazas-sublimados-personalizados/san-valentin">
+              <img
+                className="d-block w-100 slider-responsive"
+                src={HEADER_IMAGE.BANNER_TAZAS_SUBLIMADOS_SV_MOVIL}
+                alt="First slide"
+              />
+            </Link>
+          </Carousel.Item>
         </Carousel>
         
       )}
@@ -91,6 +100,15 @@ function IndividualIntervalsExample() {
               <img
                 className="d-block w-100 h-450 slider-responsive"
                 src={HEADER_IMAGE.BANNER_TAZAS_SUBLIMADOS_CUSTOM_WEB}
+                alt="First slide"
+              />
+            </Link>
+          </Carousel.Item>
+          <Carousel.Item interval={5000}>
+            <Link to="/sublimados/tazas-sublimados-personalizados/san-valentin">
+              <img
+                className="d-block w-100 h-450 slider-responsive"
+                src={HEADER_IMAGE.BANNER_TAZAS_SUBLIMADOS_SV_WEB}
                 alt="First slide"
               />
             </Link>

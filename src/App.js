@@ -23,6 +23,7 @@ import { TazasSublimadosPersonalizados } from './pages/sublimados/tazasSublimado
 import { TazasSublimadosPlantillas } from './pages/sublimados/tazasSublimadosPlantillas/TazasSublimadosPlantillas';
 import { TazasSublimadosPersonalizadosDisenos } from './pages/sublimados/tazasSublimadosPersonalizadosDisenos/tazasSublimadosPersonalizadosDisenos';
 import { PageDetailProducts } from './pages/pageDetails/PageDetailProducts';
+import { TazasSublimadasSanValentinLiquidacion } from './pages/sublimados/tazasSublimadasSanValentinLiquidacion/TazasSublimadasSanValentinLiquidacion';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -54,6 +55,7 @@ function App() {
         {/* <Route  exact path="/sublimados/tazas-sublimados-personalizados/plantillas" element={<TazasSublimadosPlantillas />} /> */}
         <Route  exact path="/sublimados/tazas-sublimados-personalizados/:idDisenos" element={<TazasSublimadosPlantillas />} />
         <Route  exact path="/sublimados/tazas-sublimados-personalizados/plantillas" element={<TazasSublimadosPersonalizadosDisenos />} />
+        <Route  exact path="/sublimados/tazas-sublimados-personalizados/san-valentin" element={<TazasSublimadasSanValentinLiquidacion />} />
       </Routes>
      </Layout>
     </BrowserRouter>

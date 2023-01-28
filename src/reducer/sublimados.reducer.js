@@ -2,7 +2,8 @@ import { TYPES_SUBLIMADOS } from "./sublimados.action"
 
 export const initialStateSublimados = {
     tazasSublimadosPlantillas:[],
-    categoriesTazasSublimadasDisenos: []
+    categoriesTazasSublimadasDisenos: [],
+    tazasSanValentinLiquidacion:[]
 }
 
 export const sublimadosReducer = (state = initialStateSublimados, action) => {
@@ -17,6 +18,12 @@ export const sublimadosReducer = (state = initialStateSublimados, action) => {
         return{
             ...state,
             categoriesTazasSublimadasDisenos: action.payload
+        }
+    }
+    case TYPES_SUBLIMADOS.GET_TAZAS_SUBLIMADOS_SAN_VALENTIN_LIQUIDACION: {
+        return{
+            ...state,
+            tazasSanValentinLiquidacion: action.payload
         }
     }
     default:

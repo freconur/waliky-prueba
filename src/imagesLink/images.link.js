@@ -16,7 +16,7 @@ export const IMAGES_LINK = {
   COJIN_CATEGORY:
     "https://firebasestorage.googleapis.com/v0/b/apiwaliky.appspot.com/o/cojinCategory.jpg?alt=media&token=5d5e48fb-3a27-4a6b-9e15-b08306cb3db9",
   HEADER__BTS:
-    "https://firebasestorage.googleapis.com/v0/b/apiwaliky.appspot.com/o/bts%2Fheader-bts%2Fheader-bts.png?alt=media&token=73438170-f483-4ec3-90cb-a5b2ac6473bf",
+    "https://firebasestorage.googleapis.com/v0/b/apiwaliky.appspot.com/o/bts%2Fheader-bts%2Fheader-bts-page-web.jpg?alt=media&token=cf5c8b9f-b6a9-4a73-9de9-953e86f84c9f",
   FACEBOOK_ICON: "https://firebasestorage.googleapis.com/v0/b/apiwaliky.appspot.com/o/icons%2Ffacebook.png?alt=media&token=84402457-dc78-4637-ad66-ca2e305eca8a",
   INSTAGRAM_ICON: "https://firebasestorage.googleapis.com/v0/b/apiwaliky.appspot.com/o/icons%2Finstagram.png?alt=media&token=51ba2846-a29a-4e74-8491-36deffed6a00",
   TIKTOK_ICON: "https://firebasestorage.googleapis.com/v0/b/apiwaliky.appspot.com/o/icons%2Ftik-tok.png?alt=media&token=6d956cf4-226a-4e8c-a666-7b2c2864ad50",

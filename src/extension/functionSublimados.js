@@ -42,3 +42,14 @@ import { TYPES_PATH } from "./pathFirebase/pathSublimados";
       dispatch({ type: TYPES_SUBLIMADOS.GET_CATEGORIES_TAZAS_SUBLIMADOS_DISENOS, payload: categoriesTazasPlantillas});
     });
   };
+
+  export const getTazasSublimadasSanValentinLiquidacion = (dispatch) => {
+    const colRef = collection(db, TYPES_PATH.GET_TAZAS_SUBLIMADOS_SAN_VALENTIN_LIQUIDACION);
+    onSnapshot(colRef, (snapshot) => {
+      let getTazasSanValentin = [];
+      snapshot.docs.forEach((doc) => {
+        getTazasSanValentin.push({ ...doc.data(), id: doc.id });
+      });
+      dispatch({ type: TYPES_SUBLIMADOS.GET_TAZAS_SUBLIMADOS_SAN_VALENTIN_LIQUIDACION, payload: getTazasSanValentin});
+    });
+  };

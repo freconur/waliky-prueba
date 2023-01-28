@@ -40,6 +40,7 @@ const ProductsItem = ({ items,loader }) => {
                   <p className="products-item__info-text__marca">
                     {item?.marca}
                   </p>
+                  <span className="products-item__info-text__name-web">{item.name}</span>
                   <p className="products-item__info-text__name">{item.name}</p>
                   <div className="products-item__info-price-container">
                   <p className="products-item__info-text__price">
