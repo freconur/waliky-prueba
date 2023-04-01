@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import "./navbarList.css";
+// import "./navbarList.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown as down } from "@fortawesome/free-solid-svg-icons";
 const NavbarList = ({ width, menuActive, setMenuActive }) => {

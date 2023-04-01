@@ -1,5 +1,7 @@
 .navbar_waliky {
   display: flex;
+  position:relative;
+  /* z-index: 300; */
   align-items: center;
   background: linear-gradient(90deg, #00b19f 14.97%, #4f31da 88.39%);
   width: 100%;
@@ -8,17 +10,22 @@
 .navbar_container {
   display: flex;
   justify-content: space-between;
-  
+  height: 100%;
   width: 100%;
   max-width: 1300px;
-  margin: auto 10px;
+  /* margin: auto 10px; */
 }
 .logo__link {
+  /* width: 150px; */
   width: 150px;
+  display: flex;
+  height: 50px;
+  text-align: center;
 }
 .logo {
   color: white;
   width: 100%;
+  display: block;
 }
 .navbar__list {
   display: flex;
@@ -36,8 +43,12 @@
 .navbar__list li {
   font-size: 1.3rem;
 }
-
-
+@media (max-width: 648px) {
+  .navbar-waliky__active {
+    /* position: fixed; */
+    /* z-index: 200; */
+  }
+}
 @media (max-width: 420px) {
   .navbar_waliky {
     /* position: relative;

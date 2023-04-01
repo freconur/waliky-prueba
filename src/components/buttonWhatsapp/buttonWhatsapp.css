@@ -12,7 +12,7 @@
     align-items: center;
     box-shadow: 3px 4px 5px rgb(0 0 0 / 50%);
     transition: transform 300ms linear;
-    z-index: 30;
+    z-index: 180;
 }
 .buttonWhatsapp:hover {
     transition: transform 300ms linear;
